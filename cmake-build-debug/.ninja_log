@@ -1,0 +1,5 @@
+# ninja log v5
+1	1074	1647886334000000000	CMakeFiles/CPP_Module_00.dir/ex01/phonebook.cpp.o	cbfdbe87896b749a
+0	1081	1647886334000000000	CMakeFiles/CPP_Module_00.dir/ex01/contact.cpp.o	567aa4ee65258e8c
+0	1086	1647886334000000000	CMakeFiles/CPP_Module_00.dir/ex01/main.cpp.o	118b5bbffabc088e
+1086	1233	1647886334000000000	CPP_Module_00	4a213c3372f615ed
