@@ -6,6 +6,7 @@
 #include "contact.hpp"
 
 class phonebook {
+
 public:
 	phonebook(void);
 
@@ -13,8 +14,11 @@ public:
 //	search();
 //	add();
 //	exit();
+	void add_contact(void);
+	void search(void);
 private:
-	//Contact contacts[8];
+	int id;
+	Contact contacts[8];
 };
 
 
