@@ -20,7 +20,7 @@ private:
 	enum info {
 		first_name = 0,
 		last_name,
-		nickname = 2,
+		nickname,
 		phone,
 		darkest_secret
 	};

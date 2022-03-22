@@ -12,21 +12,32 @@ Contact::~Contact() {
 void	Contact::showContact(void)
 {
 	std::cout << "|" << std::setw(10) << id;
-	std::cout << "|" << std::setw(10) << info[0];
-	std::cout << "|" << std::setw(10) << info[1];
-	std::cout << "|" << std::setw(10) << info[2];
-	std::cout << std::endl;
+	for (int i = 0; i < 3; i++) // 3 - wtf
+	{
+		if (info[i].size() > 10)
+			std::cout << "|" << info[i].substr(0, 9) << ".";
+		else
+			std::cout << "|" << std::setw(10) << info[i];
+
+	}
+	std::cout << "|" << std::endl;
 }
 
 bool Contact::setContact(int index) {
 	id = index;
 
 	std::getline(std::cin, info[0]);
-//	std::getline(std::cin, info[2]);
 	for (int i = 0; i <= 2; i++)
+	{
+		if (i == 0)
+			std::cout << "Enter name: ";
+		else if (i == 1)
+			std::cout << "Enter last name: ";
+		else if (i == 2)
+			std::cout << "Enter nickname: ";
 		std::getline(std::cin, info[i]);
-//	for (int i = first_name; i <= 2; i++)
-//		std::cout << info[i] << std::endl;
-	//if длина строки == 0 то false
+		if (info[i].empty() == 1)
+			return (false);
+	}
 	return (true);
 }
