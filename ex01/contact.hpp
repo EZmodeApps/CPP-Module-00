@@ -24,11 +24,6 @@ private:
 		phone,
 		darkest_secret
 	};
-//	std::string name;
-//	char *last_name;
-//	char *nick;
-//	char *phone;
-//	char *secret;
 };
 
 

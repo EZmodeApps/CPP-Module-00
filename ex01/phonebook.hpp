@@ -9,14 +9,11 @@ class phonebook {
 
 public:
 	phonebook(void);
-
 	~phonebook(void);
-//	search();
-//	add();
-//	exit();
 	void add_contact(void);
 	void search(void);
 private:
+	int amount;
 	int index;
 	Contact contacts[3];
 };

@@ -1,20 +1,24 @@
 #include "phonebook.hpp"
 
-int	main(int argc, char **argv)
+int	main(void)
 {
 	std::string input;
 	phonebook ph;
+	bool run = true;
 
-	while (true)
+	while (run)
 	{
 		std::cout << "Please enter your command:" << std::endl;
-		std::cin >> input;
+//		std::cin >> input;
+		std::getline(std::cin, input);
 		if (input == "ADD" || input == "add")
 			ph.add_contact();
 		if (input == "SEARCH" || input == "search")
 			ph.search();
 		if (input == "EXIT" || input == "exit")
-			return (0);
+			run = false;
+//		else
+//			std::cout << "Error: wrong command!" << std::endl;
 	}
 	return (0);
 }
