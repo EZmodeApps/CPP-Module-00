@@ -24,8 +24,10 @@ void	Contact::showContact(void)
 }
 
 bool Contact::setContact(int index) {
-	id = index;
-
+	if (index > 3) // 8
+		id = 0;
+	else
+		id = index;
 	std::getline(std::cin, info[0]);
 	for (int i = 0; i <= 2; i++)
 	{

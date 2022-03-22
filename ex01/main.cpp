@@ -5,18 +5,17 @@ int	main(int argc, char **argv)
 	std::string input;
 	phonebook ph;
 
-	std::cout << "Please enter your command " << std::endl;
-	while (true) {
+	while (true)
+	{
+		std::cout << "Please enter your command:" << std::endl;
 		std::cin >> input;
-//		std::cout << "u entered " << input << std::endl;
-		if (input == "ADD" || input == "add") {
-			//ph.search();
+		if (input == "ADD" || input == "add")
 			ph.add_contact();
-//			std::cout << "123\n" << std::endl << std::endl;
-
-		}
 		if (input == "SEARCH" || input == "search")
 			ph.search();
+		if (input == "EXIT" || input == "exit")
+			return (0);
 	}
+	return (0);
 }
 

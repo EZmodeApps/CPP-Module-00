@@ -6,8 +6,10 @@ phonebook::~phonebook() {}
 
 void phonebook::add_contact(void)
 {
-	if (contacts[index].setContact(index)) //если строка не пустая то увеличиваем счетчик
+	if (contacts[index].setContact(index) && index <= 8) //если строка не пустая то увеличиваем счетчик
 		index++;
+//	else if (contacts[index].setContact(index) && index == 8)
+//		index = 0;
 }
 
 void 	phonebook::search(void)

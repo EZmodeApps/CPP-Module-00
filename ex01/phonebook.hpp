@@ -18,7 +18,7 @@ public:
 	void search(void);
 private:
 	int index;
-	Contact contacts[8];
+	Contact contacts[3];
 };
 
 
