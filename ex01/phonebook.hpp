@@ -8,14 +8,15 @@
 class phonebook {
 
 public:
-	phonebook(void);
-	~phonebook(void);
-	void add_contact(void);
-	void search(void);
+	phonebook();
+	~phonebook();
+	void add_contact();
+	void search();
+
 private:
 	int amount;
 	int index;
-	Contact contacts[3];
+	Contact contacts[8];
 };
 
 

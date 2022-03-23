@@ -11,19 +11,12 @@ public:
 	Contact();
 	~Contact();
 	bool setContact(int index);
+	void showContacts();
 	void showContact();
 
 private:
 	int id;
-	std::string fields_info[5];//cами поля
-	std::string info[5];
-	enum info {
-		first_name = 0,
-		last_name,
-		nickname,
-		phone,
-		darkest_secret
-	};
+	std::string info[6];
 };
 
 

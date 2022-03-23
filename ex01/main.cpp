@@ -1,6 +1,6 @@
 #include "phonebook.hpp"
 
-int	main(void)
+int	main()
 {
 	std::string input;
 	phonebook ph;
@@ -9,7 +9,6 @@ int	main(void)
 	while (run)
 	{
 		std::cout << "Please enter your command:" << std::endl;
-//		std::cin >> input;
 		std::getline(std::cin, input);
 		if (input == "ADD" || input == "add")
 			ph.add_contact();
@@ -17,8 +16,6 @@ int	main(void)
 			ph.search();
 		if (input == "EXIT" || input == "exit")
 			run = false;
-//		else
-//			std::cout << "Error: wrong command!" << std::endl;
 	}
 	return (0);
 }
