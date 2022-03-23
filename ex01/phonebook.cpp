@@ -18,7 +18,7 @@ phonebook::~phonebook() {}
 
 void phonebook::add_contact()
 {
-	if (index == 8) //8
+	if (index == 8)
 		index = 0;
 	bool result = contacts[index].setContact(index);
 	if (!result)
