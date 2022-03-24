@@ -11,7 +11,7 @@ HEARER	=	contact.h phonebook.h
 all:	$(NAME)
 
 $(NAME):	$(OBJS)
-	c++ $(SRCS) -I. -g -o $(NAME)
+	c++ $(SRCS) -I. -o $(NAME)
 
 clean:
 	rm -f $(NAME)

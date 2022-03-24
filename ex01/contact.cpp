@@ -20,7 +20,7 @@ Contact::~Contact() {}
 void	Contact::showContacts()
 {
 	std::cout << "|" << std::setw(10) << id;
-	for (int i = 0; i < 3; i++) // 5
+	for (int i = 0; i < 3; i++)
 	{
 		if (info[i].length() > 10)
 			std::cout << "|" << info[i].substr(0, 9) << ".";
