@@ -12,7 +12,7 @@
 
 #include "phonebook.hpp"
 
-phonebook::phonebook() : index(0), amount(0) {}
+phonebook::phonebook() : amount(0), index(0) {}
 
 phonebook::~phonebook() {}
 

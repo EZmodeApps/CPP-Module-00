@@ -6,12 +6,10 @@ OBJS	=	${SRCS:.c=.o}
 
 FLAGS	=	-Wall -Wextra -Werror
 
-HEARER	=	contact.h phonebook.h
-
 all:	$(NAME)
 
 $(NAME):	$(OBJS)
-	c++ $(SRCS) -I. -o $(NAME)
+	c++ $(FLAGS) $(SRCS) -I. -o $(NAME)
 
 clean:
 	rm -f $(NAME)
