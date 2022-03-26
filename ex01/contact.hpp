@@ -13,9 +13,8 @@
 #ifndef CPP_MODULE_00_CONTACT_H
 #define CPP_MODULE_00_CONTACT_H
 
+#include <iomanip>
 #include <iostream>
-# include <iomanip>
-#include <string>
 
 class Contact {
 
