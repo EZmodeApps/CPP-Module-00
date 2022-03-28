@@ -55,7 +55,7 @@ void 	phonebook::search()
 		try {
 			num = std::stoi(input);
 		}
-		catch (const std::exception& e) {
+		catch (const std::exception &e) {
 			num = -1;
 		}
 		if (num >= 0 && num <= 8 && num < amount) {
